@@ -4,5 +4,4 @@ build:
      context: .
      dockerfile: Dockerfile
 deploy:
-  - kubectl get pods
   - kubectl apply -f deploy.yaml
