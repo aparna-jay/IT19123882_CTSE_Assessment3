@@ -25,7 +25,7 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: ${{ secrets.DOCKER_USERNAME }}/IT19123882_CTSE_Assessment3:${{ github.sha }}
+        tags: ${{ secrets.DOCKER_USERNAME }}/it19123882_ctse_assessment3:${{ github.sha }}
     # - uses: actions-hub/kubectl@master
     #   env:
     #     KUBE_CONFIG: ${{ secrets.KUBE_CONFIG }}
