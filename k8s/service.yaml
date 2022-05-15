@@ -3,14 +3,14 @@ kind: Service
 metadata:
   creationTimestamp: null
   labels:
-    app: order_service
-  name: order_service
+    app: order-service
+  name: order-service
 spec:
   ports:
   - port: 3000
     protocol: TCP
     targetPort: 3000
   selector:
-    app: order_service
+    app: order-service
 status:
   loadBalancer: {}
