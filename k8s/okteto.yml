@@ -17,3 +17,10 @@ spec:
         image: it19123882/it19123882_ctse_assessment3:dce4f14258c3f7f0e1f5503803909cc604ad607c
         ports:
         - containerPort: 3000
+build:
+  hello-world:
+     image: it19123882/it19123882_ctse_assessment3:dce4f14258c3f7f0e1f5503803909cc604ad607c
+     context: .
+     dockerfile: Dockerfile
+deploy:
+  - kubectl apply -f k8s
