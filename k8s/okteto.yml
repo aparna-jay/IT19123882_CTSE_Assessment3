@@ -1,0 +1,7 @@
+build:
+  order_service:
+     image: it19123882/it19123882_ctse_assessment3:760f1da8f7b15c10d27b330d233f59cd969875fc
+     context: .
+     dockerfile: Dockerfile
+deploy:
+  - kubectl apply -f k8s
