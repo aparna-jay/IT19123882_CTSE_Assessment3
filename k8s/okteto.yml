@@ -3,8 +3,8 @@ kind: Deployment
 metadata:
   generation: 1
   labels:
-    app: ctse
-  name: ctse
+    app: order-service
+  name: order-service
   namespace: default
 spec:
   progressDeadlineSeconds: 600
@@ -12,7 +12,7 @@ spec:
   revisionHistoryLimit: 10
   selector:
     matchLabels:
-      app: ctse
+      app: order-service
   strategy:
     rollingUpdate:
       maxSurge: 25%
@@ -22,7 +22,7 @@ spec:
     metadata:
       creationTimestamp: null
       labels:
-        app: ctse
+        app: order-service
     spec:
       containers:
       - image: it19123882/it19123882_ctse_assessment3:dce4f14258c3f7f0e1f5503803909cc604ad607c
