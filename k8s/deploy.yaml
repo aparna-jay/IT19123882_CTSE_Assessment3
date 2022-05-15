@@ -25,7 +25,7 @@ spec:
         app: ctse
     spec:
       containers:
-      - image: it19123882/it19123882_ctse_assessment3:760f1da8f7b15c10d27b330d233f59cd969875fc
+      - image: it19123882/it19123882_ctse_assessment3:7bbaea997027989b5eef7ad566ac8390f6ab3c5b
         imagePullPolicy: Always
         name: it19123882-ctse-assessment3-r9fjt
         resources: {}

@@ -1,8 +1,8 @@
 build:
   order_service:
-     image: it19123882/it19123882_ctse_assessment3:760f1da8f7b15c10d27b330d233f59cd969875fc
+     image: it19123882/it19123882_ctse_assessment3:7bbaea997027989b5eef7ad566ac8390f6ab3c5b
      context: .
      dockerfile: Dockerfile
 deploy:
   - kubectl get pods
-  - kubectl apply -f k8s\deploy.yaml
+  - kubectl apply -f k8s
